@@ -587,7 +587,7 @@ module "container_definition" {
 ################################################################################
 
 locals {
-  create_task_definition = var.create && var.create_task_definition
+  create_task_definition = var.create_task_definition
 
   # This allows us to query both the existing as well as Terraform's state and get
   # and get the max version of either source, useful for when external resources
